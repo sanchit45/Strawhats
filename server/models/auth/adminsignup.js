@@ -1,6 +1,6 @@
 import usermodel from "../../utils/schema/userschema.js";
 import bcryptjs from "bcryptjs"
-import generatejwt from "../../middlewares/generatejwt.js";
+import generatejwt from "../../generatejwt.js";
 export const adminsignup = async (req, res) => {
     try {
         const { name, email, password, confirmpassword, adminkey } = req.body;

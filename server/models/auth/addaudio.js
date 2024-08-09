@@ -1,27 +1,26 @@
-import audiomodel from "../../utils/schema/audioschema";
-
-export const addaudio=async(req,res)=>{
-    try{
-        const user=req.user
-        const userid=user._id;
-        const {url}=req.body; 
-        const newaudio=audiomodel({
-            author:userid,
-            audiourl:url
+import audiomodel from "../../utils/schema/audioschema.js";
+export const addaudio = async (req, res) => {
+    try {
+        const user = req.user
+        const userid = user._id;
+        const { url } = req.body;
+        const newaudio = audiomodel({
+            author: userid,
+            audiourl: url
         })
-        if(newaudio){
+        if (newaudio) {
             await newaudio.save();
-            res.status(201).json({message:"audio added successfully"});
+            res.status(201).json({ message: "audio added successfully" });
         }
-        else{
+        else {
             console.log(error.message);
-            res.json({message:"Invalid details. PLease check"})
+            res.json({ message: "Invalid details. Please check" })
         }
     }
-    catch(error){
-        console.log(error.message);
-        res.status(500).json({message:"internal server error :("})
+    catch (error) {
+        // console.log(error.message);
+        res.status(500).json({ message: "internal server error :(" })
     }
-    
-    
+
+
 }
