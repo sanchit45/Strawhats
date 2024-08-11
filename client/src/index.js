@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-
+  import { createContext } from 'react';
+import App from './App.js'; 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+export const Context =createContext({isauthenticated:false});
+
+const Compi=()=>{
+  const [isauthenticated,setisauthenticated]=useState(false);
+  const [loading,setloading]=useState(false);
+  const [user,setuser]=useState({});
+
+  return(
+  <Context.Provider value={{isauthenticated,setisauthenticated,user,setuser,loading,setloading}}>
+    <App/>
+  </Context.Provider>
+  );
+}
 root.render(
   <React.StrictMode>
-    <App />
+    <Compi/>
   </React.StrictMode>
 );

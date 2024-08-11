@@ -3,15 +3,11 @@ import bcryptjs from "bcryptjs"
 import generatejwt from "../../generatejwt.js";
 export const signup = async (req, res) => {
     try {
-        const { name, email, password, confirmpassword, role } = req.body;
-        if (password !== confirmpassword) {
-            res.json({ message: "password do not match" });
-            return;
-        }
+        const { name, email, password } = req.body;
 
         const user = await usermodel.findOne({ email });
         if (user) {
-            res.json({ message: "user with this email already exists" })
+            res.status(401).json({ message: "user with this email already exists" })
             return;
         }
 
@@ -23,7 +19,7 @@ export const signup = async (req, res) => {
             name,
             password: hashedpassword,
             email,
-            role
+            role:false
         })
         if (newuser) {
             await newuser.save();
@@ -32,7 +28,7 @@ export const signup = async (req, res) => {
         }
         else {
             console.log(error.message);
-            res.json({ message: "Invalid user details." })
+            res.status(401).json({ message: "Invalid user details." })
         }
     }
     catch (error) {

@@ -13,8 +13,9 @@ export const isauth = async (req, res, next) => {
         next();
     }
     else{
-        return res.json({
-            message:"please login first"
+        console.log("not logged in")
+        return res.status(401).json({
+            error:"please login first"
         })
     }
 }
