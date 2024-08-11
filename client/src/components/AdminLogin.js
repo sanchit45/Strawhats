@@ -8,12 +8,12 @@ import Adduser from './Adduser'
 const AdminLogin = () => {
     const [email, setemail] = useState()
     const [adminkey, setadminkey] = useState()
-    const { isauthenticated, setisauthenticated,setloading,loading } = useContext(Context);
+    const { isauthenticated, setisauthenticated, setloading, loading } = useContext(Context);
 
     const submithandler = async (e) => {
         e.preventDefault();
         try {
-            
+
             const { data } = await axios.post("http://localhost:5000/api/auth/adminlogin", {
                 email, adminkey
             }, {
@@ -32,13 +32,16 @@ const AdminLogin = () => {
         }
     }
     if (isauthenticated) {
-        return <Adduser/>
-      }
+        return <Adduser />
+    }
     return (
         <>
-            <div className="main flex w-[80%] h-[90vh] my-[2rem] mx-auto bg-[#E1E5E7]">
-                <div className="imgsection">
-                    <img className='h-full' src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723161600&semt=ais_hybrid" alt="" />
+            <div className="main flex w-[70%] h-[90vh] my-[2rem] mx-auto bg-[#E1E5E7]">
+                <div className="imgsection relative w-[30%]">
+                    <h1 className='absolute text-2xl text-white font-bold top-[1rem] left-[1rem]'>Sentinel</h1>
+                    <img className='h-full w-full' src="https://img.freepik.com/free-photo/front-view-female-doctor-with-medical-mask-hairnet-posing-with-arms-crossed_23-2148847634.jpg?ga=GA1.1.320508142.1722584958&semt=ais_hybrid" alt="" />
+                    <h1 className='absolute bottom-[1rem] w-[70%] left-[4rem] font-serif text-[1.1rem] font-bold'>Empowering Healthcare Thorugh Ai-Driven Adverse Event Detection</h1>
+
                 </div>
                 <div className="formsection flex flex-col w-[70%] p-[4rem]">
                     <div className="heading bg-red">
@@ -55,8 +58,8 @@ const AdminLogin = () => {
                                 <p className='font-bold my-[0.5rem]'>ADMIN KEY</p>
                                 <input className='border-solid border-2 border-black w-[100%] rounded-md h-[2rem]' type="text" placeholder='admin key' value={adminkey} onChange={(e) => { setadminkey(e.target.value) }} />
                             </div>
+                            <button className='bg-[#0184BC] text-white mt-[2rem] w-full h-[2rem] rounded-lg text-[1rem]' >Login</button>
                             <p className='my-[1rem]'>Not an admin ? Login as<Link className='mx-[0.4rem] font-bold text-[grey]' to="/login">Hospital Personnel</Link> </p>
-                            <button className='bg-[grey] text-white font-bold w-[7rem] h-[3rem] rounded-lg text-[1.3rem]' >Login</button>
                         </form>
                     </div>
                     {/* <Marquee >
