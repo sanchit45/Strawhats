@@ -23,7 +23,7 @@ class PatientCallTranscriptionText(BaseModel):
 @app.post("/analyze/")
 async def analyze(text_input: PatientCallTranscriptionText):
     try:
-        result = ae_model.inference(PatientCallTranscriptionText.text)
+        result = ae_model.inference(text_input.text)
         
         return {"result": {
             "is_ae": True if result["reactions"] else False,
