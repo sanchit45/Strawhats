@@ -40,9 +40,9 @@ You can access the Figma design file here:
 
 Here are some screenshots of the user interface:
 
-![Homepage](assets/2c277fbb-44ac-47ad-8d4f-2ee5da28dd6d.jpg.jpg)
+!(assets/2c277fbb-44ac-47ad-8d4f-2ee5da28dd6d.jpg.jpg)
 
-![Dashboard](2d9f8aec-e713-4af4-802f-cedae0994838.jpg)
+!(assets/2d9f8aec-e713-4af4-802f-cedae0994838.jpg)
 
 
 
