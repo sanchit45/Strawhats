@@ -37,7 +37,7 @@ Millions of conversations happen between medical agents/nurses and patients ever
 ### Usage
 ## Documentation
 
-The detailed requirements and system specifications are available in the [`docs/requirements_analysis_document.md`](docs/Requirements Analysis Document.pdf) file.
+The detailed requirements and system specifications are available in the [`docs/Requirements Analysis Document.pdf`] file.
 
 ## License
 
