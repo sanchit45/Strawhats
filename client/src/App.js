@@ -7,6 +7,7 @@ import { Context } from '.';
 import { useContext, useEffect } from 'react';
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
+import Getreports from './components/Getreports';
 function App() {
   const { setuser, setisauthenticated, loading, setloading } = useContext(Context);
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/adminlogin" element={<AdminLogin />} />
+        <Route path="/getrepo" element={<Getreports />} />
       </Routes>
       <Toaster></Toaster>
     </Router>
