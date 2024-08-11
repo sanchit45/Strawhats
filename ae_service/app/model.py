@@ -73,7 +73,6 @@ class AdverseEvents:
 
         for i in res:
             result[i[0]] = i[1]
-        result["reactions"] = list(set(result["reactions"]))
         return result
 
 
