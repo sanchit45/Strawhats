@@ -36,6 +36,12 @@ You can access the Figma design file here:
 
 [Figma Design Link](https://www.figma.com/design/5hCEObASv7akoJSJ3dwXJD/Veersa---Sentinal?node-id=0-1&t=f37xa9kz7Ek5m9K0-1)
 
+## Links
+
+**Ml API:** API for speech to text conversion of phone call and adverse event analysis [View API](https://veersa-hack.onrender.com/transcribe)
+**Deployed Application:** Check out the live application here. [Access Deployed App]()
+
+
 ## Getting Started
 
 ### Prerequisites
