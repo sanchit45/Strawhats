@@ -1,8 +1,24 @@
 from fastapi import FastAPI, HTTPException
-from schema import PatientCallTranscriptionText
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 from model import ae_model
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+class PatientCallTranscriptionText(BaseModel):
+    text: str
 
 @app.post("/analyze/")
 async def analyze(text_input: PatientCallTranscriptionText):
