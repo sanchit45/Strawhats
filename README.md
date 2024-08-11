@@ -26,6 +26,16 @@ Millions of conversations happen between medical agents/nurses and patients ever
 - **Sentiment Analysis:** Analyzes the sentiment of the patient at different points in the conversation.
 - **User Interface:** Web-based interface for uploading audio files and viewing analysis results.
 
+ ## 🎨 Figma Design
+
+Our project's user interface and experience are crafted using Figma. The Figma design file serves as the blueprint for our application's layout, visual elements, and interactions.
+
+### 📁 Figma Design File
+
+You can access the Figma design file here:
+
+[Figma Design Link](https://www.figma.com/design/5hCEObASv7akoJSJ3dwXJD/Veersa---Sentinal?node-id=0-1&t=f37xa9kz7Ek5m9K0-1)
+
 ## Getting Started
 
 ### Prerequisites
