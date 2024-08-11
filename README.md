@@ -43,10 +43,15 @@ You can access the Figma design file here:
 
 Here are some screenshots of the user interface:
 
-![UI1](assets/2c277fbb-44ac-47ad-8d4f-2ee5da28dd6d.jpg)
+![Screenshot 1](assets/2c277fbb-44ac-47ad-8d4f-2ee5da28dd6d.jpg)
 
-![UI2](assets/2d9f8aec-e713-4af4-802f-cedae0994838.jpg)
+![Screenshot 2](assets/2d9f8aec-e713-4af4-802f-cedae0994838.jpg)
 
+![Screenshot 3](assets/WhatsApp%20Image%202024-08-11%20at%2023.55.17%20(1).jpeg)
+
+![Screenshot 4](assets/WhatsApp%20Image%202024-08-11%20at%2023.55.17%20(2).jpeg)
+
+![Screenshot 5](assets/WhatsApp%20Image%202024-08-11%20at%2023.55.17.jpeg)
 
 
 ## Links
