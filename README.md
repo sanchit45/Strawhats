@@ -57,7 +57,8 @@ Here are some screenshots of the user interface:
 ## Links
 
 **Ml API:** API for speech to text conversion of phone call and adverse event analysis [View API](https://veersa-hack.onrender.com/transcribe)
-**Deployed Application:** Check out the live application here. [Access Deployed App]()
+
+**Deployed Application:** Check out the live application here. [Access Deployed App](https://versa-sentinel.vercel.app/dashboard/overview)
 
 
 ## Getting Started
